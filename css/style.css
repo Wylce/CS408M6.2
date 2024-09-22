@@ -1,4 +1,162 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+article {
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative;
+}
+
+address {
+  position: absolute;
+  bottom: 8mm;
+  right: 20mm;
+}
+
+h1 {
+  position: absolute;
+  top: 12mm;
+  left: 20mm;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+
+}
+
+/* Your CSS below here */
+
+article {
+  /*Fallback background styling if more complicated declaration isn't supported */
+  background-image: url(../assets/top-image.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  border-top: 1mm solid rgb(90, 0, 0);
+  border-bottom: 1mm solid rgb(90, 0, 0);
+
+  background: linear-gradient(to bottom, black -45%, transparent 25%, transparent 75%, black 150%),
+              url(../assets/top-image.png) top no-repeat,
+              url(../assets/bottom-image.png) bottom no-repeat;
+
+background-color: white;
+}
+
+header{
+  margin: 5px;
+}
+
+header a{
+  color: white;
+}
+
+header a:hover{
+  text-decoration: none;
+}
+
+h1 {
+  background-image: url(../assets/logo.png);
+
+  /*filter: drop-shadow(4px 2px 3px black);*/
+
+  border-radius: 128px;
+  box-shadow: 2px 2px 6px black;
+}
+
+/*Article Header*/
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Commons';
+
+  margin-bottom: 3mm;
+}
+
+hgroup p {
+  text-align: center;
+  font-size: 1em;
+  font-style: italic;
+  margin-left: 20mm;
+  margin-right: 20mm;
+}
+
+/*Main Text Content*/
+
+h3{
+  font-family: 'Commons';
+  margin-bottom: 0px;
+
+  line-height: 1.5em;
+
+}
+
+hr {
+  clear:both;
+  border:0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, 20%, black, 80%, transparent);
+}
+
+main {
+  margin: 20mm;
+  margin-top: 60mm;
+  margin-bottom: 60mm;
+
+}
+
+p {
+  font-size: 1em;
+  font-family:'Javanese Text';
+  line-height: 1.3em;
+}
+
+.text-content{
+  height: 180mm;
+  column-count: 2;
+}
+
+/*Styling for the radio button section*/
+
+form.word-select{
+  display: flex;
+  align-items: center;
+}
+
+button{
+  margin: 15px;
+  height: 44px;
+  font-size: 1em;
+  background-color: rgb(240, 240, 240);
+  border: outset rgb(161, 161, 161);
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgb(260, 260, 260);
+}
+
+button:active{
+  background-color: rgb(200, 200, 200);
+}
+
+.selection-item *{
+  cursor: pointer;
+}
+
+fieldset.selection{
+  border: outset rgb(161, 161, 161)
 }

@@ -1,18 +1,83 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fancy letterheaded paper</title>
+    
+  </head>
+  <body>
 
-<head>
-  <meta charset="utf-8">
-  <title>Hello World!</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <article>
+      <header><h1>Awesome<br>Company</h1>
+       <a href=#main-text tabindex="0">Skip to Main Content</a>
+      </header>
 
-<body>
-  <h1>HTML Rocks!</h1>
-  <img src="img/compile.jpeg">
-  <script type="module" src="js/main.js"></script>
-</body>
+      <main tabindex="0" id="main-text">
 
+        <hgroup>
+        <h2>Lorem Ipsum</h2>
+
+        <p aria-label="Subheading">Curabitur nec nulla, lacinia diam vel, euismod lacus. Fusce eu ante eros. Ut pharetra libero eu erat lobortis, vitae porta ex aliquam.</p>
+        </hgroup>
+
+        <hr>
+
+        <section class="text-content" aria-label="article text content">
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus vel arcu fringilla interdum. Nulla vitae porttitor tellus, at tristique neque. Suspendisse a posuere magna, ac laoreet augue. Nullam id scelerisque tortor. Pellentesque commodo ipsum sit amet leo convallis tristique. Maecenas aliquet nisl eget mauris tempus molestie. Aliquam lacinia pulvinar dignissim. Mauris luctus nulla vehicula feugiat semper. Vivamus ut sollicitudin dolor. Ut dictum fringilla est at interdum. Duis pretium ante sagittis, iaculis lorem ut, placerat massa. Pellentesque nulla quam, posuere at efficitur non, vulputate quis arcu.
+        </p>
+        <p>
+        <h3>Aptent taciti sociosqu ad litora torquent</h3>
+        <p>Vestibulum malesuada sapien vitae justo finibus, vitae finibus nunc condimentum. Duis sit amet sem lobortis, varius nisl in, rhoncus neque. Aenean finibus quam sit amet vehicula pharetra. Proin varius eros ac vehicula bibendum. Ut faucibus rutrum urna pellentesque condimentum. Sed porta lectus sit amet lectus volutpat, quis mattis dolor feugiat. Curabitur vitae vestibulum arcu. Proin euismod nec odio fringilla pulvinar. Maecenas rutrum tempus diam vitae condimentum. Nulla sit amet pharetra ligula, in vestibulum quam. Ut eleifend, metus in accumsan ullamcorper, eros arcu pharetra ipsum, a tempor nunc est at urna. Nam at dictum eros, laoreet vulputate risus. Morbi egestas orci egestas purus laoreet, eget rutrum velit laoreet. Aliquam facilisis ac dui sed posuere. Nullam lacinia risus dolor, ut fringilla tortor blandit et.</p>
+        </p>
+
+        <hr>
+
+        <form class="word-select" aria-label="Word selection form">
+          <fieldset class="selection" aria-label="Selection options">
+
+            <legend>Select Word</legend>
+
+            <div class="selection-item">
+              <input type="radio" id="lorem" name="phrase-select" value="Lorem">
+              <label for="lorem">Lorem</label>
+            </div>
+
+            <div class="selection-item">
+              <input type="radio" id="ipsum" name="phrase-select" value="Ipsum">
+              <label for="ipsum">Ipsum</label>
+            </div>
+
+            <div class="selection-item">
+              <input type="radio" id="dolor" name="phrase-select" value="Dolor">
+              <label for="dolor">Dolor</label>
+            </div>
+        </fieldset>
+
+        <button class="submit-word-button" type="button" tabindex="0">Submit Your Word</button>
+
+      </form>
+
+      </div>
+      
+      </main>
+
+      <footer>
+        <address>
+          <p>The Awesome Company</p>
+          <p>102-112 Frail Bend Bridge<br>
+          The Dwindlings<br>
+          Little Hornet<br>
+          HX3 9ZQ<br>
+          UK</p>
+        </address>
+      </footer>
+    </article>
+
+    <script type="module" src="js/main.js"></script>
+
+  </body>
 </html>
