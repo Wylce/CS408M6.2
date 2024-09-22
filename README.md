@@ -1,8 +1,8 @@
-# Web Dev Starter Code
+# Week 6 Lab
 
-Wylie Hansen
-CS 408 - Week 6
-September 22, 2024
+Wylie Hansen  
+CS 408 - Week 6  
+September 22, 2024  
 
 ## Overview
 
